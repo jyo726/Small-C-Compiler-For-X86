@@ -1,0 +1,5 @@
+make & execute
+java  -cp ./antlr-4.7-complete.jar org.antlr.v4.Tool myCompiler.g
+java -cp antlr-4.7-complete.jar:. myCompiler_test input.c > output.s
+./arm-elf-gcc -L../arm-elf/lib -lc output.s -o executable
+./arm-elf-run executable
