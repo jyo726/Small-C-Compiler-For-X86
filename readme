@@ -1,5 +1,1 @@
-make & execute
-java  -cp ./antlr-4.7-complete.jar org.antlr.v4.Tool myCompiler.g
-java -cp antlr-4.7-complete.jar:. myCompiler_test input.c > output.s
-./arm-elf-gcc -L../arm-elf/lib -lc output.s -o executable
-./arm-elf-run executable
+The goal of our project this semester is to develop a prototype C compiler. This is done by compiling C programs into embedded platforms such as 68K, MIPS, ARM, or pseudo assemblies. In this class we will mainly use x86 as the target codes. The project is divided into several parts including language definition, scanner, C-grammar, symbol table handlings, parser, type checker, and code generation. In the assignment, you will need to choose the set of language features which you want to develop the compiler for in this course, and write the whole compiler (including the code generator).
